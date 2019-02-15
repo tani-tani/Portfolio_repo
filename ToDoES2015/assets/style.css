@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.todo-container {
+    width: 500px;
+    height: 800px;
+    background-color: rgb(11, 114, 11);
+    background-image: url("../img/1231441_natural-screen-wallpaper.jpg");
+    filter: sepia(40%);
+    padding: 20px;
+    position: relative;
+}
+
+.adding-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px auto;
+}
+
+#input-item {
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    border: 3px solid rgb(128, 42, 2);
+    padding-left: 10px;
+}
+
+#input-item::placeholder {
+    font-size: 16px;
+}
+
+#input-item:hover {
+    background-color: rgba(255, 234, 117, 0.4);
+}
+
+.btn-style {
+    border-radius: 5px;
+    border-color: transparent;
+    box-shadow: 0 0 5px rgb(116, 13, 0);
+    background-color: rgb(167, 48, 18);
+    color: #fff;
+    font-weight: 700;
+    line-height: 35px;
+    width: 90px;
+}
+
+.add-btn {
+    width: 60px;
+}
+
+.todo-list {
+    margin: 50px auto;
+}
+
+#list {
+    list-style-type: none;
+}
+
+.todo-list>.list__visible {
+    display: block;
+}
+
+.li-task_visible {
+    background-color: rgb(167, 48, 18);
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    width: 350px;
+    height: 35px;
+    border-radius: 10px;
+    padding: 5px 15px;
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+.remove {
+    display: none;
+}
+
+.display {
+    display: block;
+}
+
+.li-task_button-done {
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/tick-box.svg);
+    padding: 0;
+    border: none;
+    position: absolute;
+    top: 5px;
+    right: 50px;
+}
+
+.li-task_button-delete {
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/cross-checkbox.png);
+    padding: 0;
+    border: none;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+}
+
+.task-done:read-only {
+    text-decoration: line-through;
+    background-color: rgba(167, 48, 18, 0.7);
+}
+
+.switch-btn {
+    position: fixed;
+    top: 600px;
+    left: 200px;
+}
+
+.clear-btn {
+    position: fixed;
+    top: 700px;
+    left: 200px;
+}

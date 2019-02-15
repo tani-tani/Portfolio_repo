@@ -1,0 +1,596 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow|Varela+Round');
+
+* {
+    box-sizing: border-box;
+    font: 400 18px/30px "Barlow", sans-serif;
+}
+body {
+    margin: 0 auto;
+    background-color: #fff;
+}
+.rec{
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     flex-direction: column;
+     width: 100%;
+     height: 644px;
+ }
+.menu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.menu img {
+      width: 99px;
+      margin: 0 34px 0;
+  }
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: flex;
+    width: 12px;
+    height: 12px;
+    background-color: #979e97;
+    border-radius: 50%;
+}
+nav ul li:hover {
+    background-color: #fff;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    width: 75%;
+    margin-bottom: 69px;
+}
+h1 {
+    display: flex;
+    color: #fff;
+    font: 400 42px/54px "Varela Round", sans-serif;
+    text-align: center;
+    margin: 0;
+}
+p {
+    text-align: center;
+    color: #fff;
+    margin: 50px 0 0 0;
+}
+.more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: transparent;
+    font: 400 16px/17px "Varela Round", sans-serif;
+    border: 3px solid #fff;
+    margin: 52px 0 109px 32px;
+    width: 203px;
+    height: 49px;
+    text-decoration: none;
+}
+.services {
+    display: flex;
+}
+.services div {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.services h3 {
+    color: #385461;
+    font: 400 16px/20px "Varela Round", sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    align-self: center;
+    margin-top: 40px;
+}
+.services .first {
+    position: relative;
+    margin-top: 40px;
+}
+.services .first::before {
+    content: '';
+    background-image: url("img/png/settings.png");
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    top: -76px;
+    left: 37px;
+}
+.services .second {
+    position: relative;
+}
+.services .second::before {
+    content: '';
+    background-image: url("img/png/clocks.png");
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    top: -76px;
+    left: 55px;
+}
+.services .third {
+    position: relative;
+}
+.services .third::before {
+    content:'';
+    background-image: url("img/png/upload.png");
+    width: 64px;
+    height: 57px;
+    position: absolute;
+    top: -76px;
+    left: 15px;
+}
+.services p {
+    color: #909090;
+    font-size: 13px;
+    line-height: 21px;
+    margin: 0;
+}
+.services .analytics {
+    margin-bottom: 117px;
+}
+.green{
+    height: 93px;
+    width: 100%;
+    background-color: #3db39e;
+    display: flex;
+    justify-content: center;
+}
+.green h2 {
+    display: flex;
+    align-self: center;
+    color: #fff;
+    font: 400 25px/16px "Varela Round", sans-serif;
+    margin-left: 10%;
+    position: relative
+}
+.green h2::before {
+    content: '';
+    background-image: url("img/png/icons.png");
+    width: 122px;
+    height: 33px;
+    position: absolute;
+    top: 32%;
+    left: -100%;
+}
+@media screen and (min-width: 480px) and (max-width: 959px){
+    .header{
+        background-image: url("img/jpg/city.jpg");
+        background-size: cover;
+        position: relative;
+    }
+    .rec {
+        background-color: #324d5b;
+        opacity: 0.6;
+    }
+    .menu{
+        margin: 69px 0 84px;
+        height: 67px;
+    }
+    .menu ul li:not(:last-child){
+        margin-right: 18px;
+    }
+    nav .hidden {
+        display: none;
+    }
+    .burger {
+        display: flex;
+        align-self: center;
+        margin-left: 80px;
+    }
+    .burger .hidden{
+        display: none;
+    }
+    .burger:active .hidden{
+        display: block;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        background-color: #324d5b;
+    }
+    .red-header div,
+    .list ul li{
+        color: #fff;
+        font: 400 15px/51px "Varela Round", sans-serif;
+        text-transform: uppercase;
+    }
+    .list ul li{
+        background-color: #324d5b;
+        opacity: 1;
+        height: calc(100% / 8);
+    }
+    .hidden .red-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #e74c3c;
+        position: relative;
+        height: 65px;
+    }
+    .hidden .red-header::before{
+        content: "";
+        background-image: url("img/logo-small.svg");
+        position: absolute;
+        top: 17px;
+        left: 32px;
+        width: 40px;
+        height: 35px;
+    }
+    .hidden .red-header img{
+        width: 23px;
+        height: 23px;
+        position: absolute;
+        top: 20px;
+        left: 83%;
+    }
+    .red-header img:active .hidden    {
+        display: none;
+    }
+    .hidden .list ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .hidden .list ul li {
+        border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+        margin-right: 0;
+        padding-left: 32px;
+        background-color: #324d5b;
+    }
+    .list ul li:last-child {
+        border-bottom: none;
+    }
+    .desktop {
+        display: none;
+    }
+    .more {
+        display: none;
+    }
+    .text h1 {
+        justify-content: center;
+        align-self: center;
+    }
+    .header .arrow {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        background: transparent;
+        border: 3px solid #fff;
+        border-radius: 50%;
+        width: 65px;
+        height: 65px;
+        margin: 0;
+        position: relative;
+    }
+    .header .arrow i {
+        display: flex;
+        align-self: center;
+        width: 10px;
+        height: 15px;
+        margin: -7px auto 0;
+        background-color: #fff;
+        border-radius: 20% 20% 0 0;
+        border-color: #fff;
+    }
+    .arrow::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 33px;
+        left: 14px;
+        width: 0;
+        height: 0;
+        color: #fff;
+        border: 15px solid transparent;
+        border-top: 15px solid #fff;
+        border-radius: 20%;
+    }
+.services {
+        display: flex;
+        flex-direction: column;
+}
+.services div {
+    margin: 80px 0 0 0;
+    width: 75%;
+}
+.services .first {
+    position: relative;
+    margin-top: 40px;
+}
+.services .first::before {
+    content: '';
+    background-image: url("img/png/settings.png");
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    top: -76px;
+    left: 37px;
+    }
+.services .second {
+    position: relative;
+}
+.services .second::before {
+    content: '';
+    background-image: url("img/png/clocks.png");
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    top: -76px;
+    left: 55px;
+}
+.services .third {
+    position: relative;
+}
+.services .third::before {
+    content:'';
+    background-image: url("img/png/upload.png");
+    width: 64px;
+    height: 57px;
+    position: absolute;
+    top: -76px;
+    left: 15px;
+}
+.services p {
+    color: #909090;
+    font-size: 13px;
+    line-height: 21px;
+    margin: 0;
+}
+.services .analytics {
+    margin-bottom: 117px;
+    }
+.green h2{
+    position: relative;
+    left: 15%;
+}
+.green h2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+}
+}
+@media screen and (min-width: 960px) and (max-width: 1439px) {
+    .rec {
+        align-items: flex-start;
+    }
+    .header {
+        background-color: #3e5764;
+    }
+    .menu {
+        margin: 69px 0 114px 0;
+        height: 67px;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .menu img {
+        margin-left: 0;
+    }
+    nav .hidden {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    nav .hidden ul {
+        display: flex;
+        justify-content: flex-start;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    nav .hidden ul li {
+        display: flex;
+        width: 12px;
+        height: 12px;
+        background-color: #979e97;
+        border-radius: 50%;
+    }
+    nav ul li {
+        display: none;
+    }
+    nav .hidden ul li:hover {
+        background-color: #fff;
+    }
+    .menu .hidden ul li:not(:last-child) {
+        margin-right: 18px;
+    }
+    .burger {
+        display: none;
+    }
+    .text{
+        align-content: flex-start;
+        text-align: left;
+        width: 35%;
+        margin-left: 32px;
+    }
+    .text h1::after{
+        content: '';
+        background-image: url("img/png/Iphone.png");
+        width: 309px;
+        height: 555px;
+        position: absolute;
+        top: 90px;
+        left: 60%;
+    }
+    .arrow {
+        display: none;
+    }
+    .hidden{
+        display: none;
+    }
+    .more {
+        margin: 52px 0 109px 32px;
+    }
+    .desktop ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 73px;
+        background-color: #e2574c;
+        position: relative;
+    }
+
+    .desktop ul li {
+        display: flex;
+        justify-content: space-around;
+        margin-right: 0;
+        padding-left: 32px;
+        font: 400 15px/16px "Varela Round", sans-serif;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    .desktop ul::before{
+          content: "";
+          background-image: url("img/logo-small.svg");
+          position: absolute;
+          top: 20px;
+          left: 1%;
+          width: 40px;
+          height: 35px;
+      }
+    .services {
+        justify-content: space-around;
+    }
+
+    .services div {
+        margin: 120px 5% 117px;
+        width: 25%;
+    }
+}
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .rec {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .header {
+        background-color: #3e5764;
+        justify-content: flex-start;
+    }
+    .menu {
+        margin: 69px 0 114px 21%;
+        height: 67px;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .menu img {
+        margin-left: 0;
+    }
+    nav .hidden {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    nav .hidden ul {
+        display: flex;
+        justify-content: flex-start;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    nav .hidden ul li {
+        display: flex;
+        width: 12px;
+        height: 12px;
+        background-color: #979e97;
+        border-radius: 50%;
+    }
+    nav ul li {
+        display: none;
+    }
+    nav .hidden ul li:hover {
+        background-color: #fff;
+    }
+    .menu .hidden ul li:not(:last-child) {
+        margin-right: 18px;
+    }
+    .burger {
+        display: none;
+    }
+    .text{
+        text-align: left;
+        width: 35%;
+        margin-left: 21%;
+    }
+     .text h1::after{
+        content: '';
+        background-image: url("img/png/Iphone.png");
+        width: 309px;
+        height: 555px;
+        position: absolute;
+        top: 90px;
+        left: 60%;
+    }
+    .text p {
+        text-align: left;
+        }
+    .more {
+        margin: 52px 0 109px 21%;
+    }
+    .arrow {
+        display: none;
+    }
+    .hidden{
+        display: none;
+    }
+    .desktop ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 0 5%;
+        margin: 0;
+        width: 100%;
+        height: 73px;
+        background-color: #e2574c;
+        position: relative;
+    }
+
+    .desktop ul li {
+        display: flex;
+        justify-content: space-around;
+        margin-right: 0;
+        padding-left: 32px;
+        font: 400 15px/16px "Varela Round", sans-serif;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    .desktop ul::before{
+        content: "";
+        background-image: url("img/logo-small.svg");
+        position: absolute;
+        top: 20px;
+        left: 20%;
+        width: 40px;
+        height: 35px;
+    }
+    .services {
+        justify-content: center;
+    }
+
+    .services div {
+        margin: 120px 2% 117px;
+        width: 20%;
+    }
+}
+

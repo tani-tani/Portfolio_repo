@@ -1,0 +1,78 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 100vh;
+    align-items: center;
+    justify-items: center;
+    font-family: sans-serif;
+    background-color: #ddebd1;
+}
+
+.container {
+    display: grid;
+    justify-items: center;
+}
+
+#timer1,
+#timer2 {
+    display: block;
+    width: 440px;
+    height: auto;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border: 5px solid #666;
+    border-radius: 20px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-areas: "a b c""a b c""a b c";
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: #3a6447;
+    border-radius: 6px;
+    width: 120px;
+    height: 40px;
+    margin-right: 10px;
+    padding: 5px;
+    color: white;
+    font-size: 1.75em;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    box-shadow: 4px 10px rgb(179, 177, 177);
+}
+
+#start {
+    grid-area: a;
+}
+
+#pause {
+    grid-area: b;
+}
+
+#stop {
+    grid-area: c;
+}
+
+button:hover {
+    background-color: #59e37b;
+}
+
+button:active {
+    background-color: #4ddb84;
+    transform: translateY(10px);
+    box-shadow: 0 0 rgb(179, 177, 177);
+}

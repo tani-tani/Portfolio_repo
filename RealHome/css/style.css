@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway:300,400,500,700');
+
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font: 16px/27px 'Raleway', sans-serif;
+	color: #797979;
+	background-color: #fff;
+}
+.b-wrapper {
+	width: 1200px;
+	padding: 0;
+	margin: 0 auto;
+}
+/* section header */
+.b-header {
+	box-shadow: 0 0 20px #e8e8e8;
+	margin-bottom: 70px;
+}
+.link-logo {
+	display: inline-block;
+	vertical-align: middle;
+}
+.b-menu {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 164px;
+}
+.b-menu_list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.b-menu_list-item {
+	display: inline-block;
+}
+.b-menu_list-item a {
+	color: #3c3c3c;
+	font: 18px/30px "Playfair Display", serif;
+	text-decoration: none;
+	display: block;
+	padding: 2.9vw 1.6vw;
+}
+.b-menu_list-item a:hover {
+	background-color: #f2f2f2;
+	transition: .3s linear;
+}
+.b-networks_list {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 0 0 1vw;
+	padding: 0;
+	list-style-type: none;
+}
+.b-networks_list-item {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 0;
+}
+.b-networks_list-item:not(:last-child) {
+	margin-right: 15px;
+}
+.b-networks_list-item {
+	width: 32px;
+	height: 32px;
+	background-color: #fff;
+	border: 2px solid #f2f2f2;
+	border-radius: 50%;
+}
+.b-networks_list-item {
+	background: no-repeat;
+}
+.b-networks_list-item:hover {
+	background-color: #f2f2f2;
+	transition: .3s linear;
+}
+.b-networks_list-item.fb {
+	background-image: url(../images/facebook.png);
+	background-position: center;
+}
+.b-networks_list-item.pi {
+	background-image: url(../images/pinterest.png);
+	background-position: center;
+}
+.b-networks_list-item.ig {
+	background-image: url(../images/instagram.png);
+	background-position: center;
+}
+.b-networks_list-item.gplus {
+	background-image: url(../images/gplus.png);
+	background-position: center;
+}
+/* section about*/
+.b-about {
+	margin-bottom: 100px;
+}
+h1 {
+	margin: 0 0 60px;
+	color: #3c3c3c;
+	font-size: 45px;
+	font-weight: 500;
+	line-height: 50px;
+}
+h1 span {
+	font-weight: 300;
+}
+.breadcrumbs_list {
+	margin: 0 0 30px;
+	padding: 0;
+	list-style: none;
+}
+.breadcrumbs_list-item {
+	display: inline-block;
+	vertical-align: middle;
+}
+.breadcrumbs_list-item:not(:first-child)::before {
+	content: '\2192';
+}
+.breadcrumbs_list-item a {
+	color: #e2574c;
+	font-weight: 400;
+	text-decoration: none;
+}
+.breadcrumbs_list span {
+	color: #3c3c3c;
+	font-weight: 700;
+}
+.article-promo img {
+	float: left;
+	margin-right: 28px;
+	margin-top: 4px;
+}
+.article-promo p {
+	font-family: "Playfair Display", serif;
+}
+/* info section */
+.b-info {
+	background-color: #f6f6f6;
+}
+.b-info_list {
+	margin: 0;
+	padding: 100px 0;
+	list-style: none;
+}
+.b-info_list-item {
+	display: inline-block;
+	vertical-align: top;
+	color: #797979;
+	width: 23%;
+	text-align: center;
+}
+.b-info_list-item:not(:first-child) {
+	margin-left: calc((100% - (23% * 4)) / 3);
+}
+.b-info_headline {
+	color: #3c3c3c;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 50px;
+	position: relative;
+}
+.b-info_headline.one::before{
+	content: '';
+	background: url(../images/earth.png) no-repeat;
+	width: 30px;
+	height: 29px;
+	position: absolute;
+	top: -30px;
+	left:115px;
+}
+.b-info_headline.two::before {
+	content: '';
+	background: url(../images/briefcase.png) no-repeat;
+	width: 31px;
+	height: 27px;
+	position: absolute;
+	top: -30px;
+	left:115px;
+
+}
+.b-info_headline.three::before {
+	content: '';
+	background: url(../images/photos.png) no-repeat;
+	width: 30px;
+	height: 29px;
+	position: absolute;
+	top: -30px;
+	left:115px;
+
+}
+.b-info_headline.four::before {
+	content: '';
+	background: url(../images/file-drawer.png) no-repeat;
+	width: 26px;
+	height: 23px;
+	position: absolute;
+	top: -30px;
+	left:115px;
+}
+/*Job section*/
+.b-job_headline {
+	display: block;
+	padding: 0;
+	float: left;
+	color: #242424;
+	font-weight: 500;
+	font-size: 37px;;
+	line-height: 65px;
+	margin-top: 100px;
+}
+.b-job_headline span {
+	font-weight: 300;
+}
+.b-job_employment {
+	display: block;
+	float: right;
+	margin-top: 100px;
+}
+.b-job_employment a {
+	color: #e2574c;
+	font: 400 20px/65px "Playfair Display", serif;
+}
+.b-job_employment a:hover {
+	text-decoration: none;
+}
+.cf::before,
+.cf::after {
+	content: '';
+	display: table;
+}
+.cf::after {
+	clear: both;
+}
+.b-job_team-pics {
+	padding: 0;
+	display: inline-block;
+	margin: 61px 7px 100px;
+	background-color: #ffffff;
+	border-radius: 3px;
+	border: 1px solid #e6e6e6;
+}
+.b-job_team-pics_name {
+	text-align: center;
+	color: #000;
+	font-size: 20px;
+	font-weight: 500;
+	padding-bottom: 14px;
+}
+.b-job_team-pics_position {
+	text-align: center;
+	color: #797979;
+	font: 400 14px/26px "Playfair Display", serif;
+	padding-bottom: 27px;
+}
+.b-subscribe {
+	height: 178px;
+	background-color: #f3f2f2;
+}
+.b-subscribe_newsletter {
+	float: left;
+	display: inline-block;
+	color: #3c3c3c;
+	font-size: 37px;
+	font-weight: 700;
+	line-height: 50px;
+	margin-top: 74px;
+}
+.b-subscribe_newsletter span {
+	font-weight: 300;
+}
+.b-subscribe_form {
+	float: right;
+	display: inline-block;
+	margin-top: 74px;
+}
+.b-subscribe_form input {
+	width: 387px;
+	height: 58px;
+	border-radius: 3px;
+	border: 2px solid #e6e6e6;
+	background-color: #ffffff;
+	color: #c2c1c1;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 60px;
+	padding: 21px 22px;
+	margin-right: 20px;
+}
+.b-subscribe_form input::-webkit-input-placeholder {
+	display: inline-block;
+	color: #c2c1c1;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 60px;
+}
+.b-subscribe_form-btn {
+	width: 153px;
+	height: 58px;
+	border-radius: 3px;
+	background-color: #e2574c;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+.b-subscribe_form span {
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 60px;
+	text-transform: uppercase;
+}
+.cf::before,
+.cf::after {
+	content: '';
+	display: table;
+}
+.cf::after {
+	clear: both;
+}
+.b-footer {
+	background-color: #303030;
+}
+.b-footer_nav,
+.b-footer_clients,
+.b-footer_contacts {
+	display: inline-block;
+	margin: 89px 127px 305px 0;
+	vertical-align: middle;
+}
+.b-footer_netlist,
+.b-footer_nav-list,
+.b-footer_clients-list,
+.b-footer_contacts_list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.b-footer_icons {
+	display: inline-block;
+	float: left;
+}
+.b-footer_logotype {
+	display: block;
+	padding: 0;
+	margin: 80px 60px 22px 0;
+	width: 177px;
+	height: 47px;
+	vertical-align: top;
+}
+.b-footer_netlist {
+	display: block;
+	padding: 0;
+	margin-top: 22px;
+	width: 190px;
+	list-style-type: none;
+	vertical-align: top;
+}
+.b-footer_netlist-item {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 0;
+	margin-right: 15px;
+
+}
+.b-footer_netlist-item a {
+	border-radius: 50%;
+	display: block;
+	width: 32px;
+	height: 32px;
+	border: 2px solid #303030;
+	background: no-repeat;
+	background-position: center;
+}
+.b-footer_netlist-item:hover {
+	transform: scale(2);
+	transition: .3s linear;
+}
+.b-footer_netlist-item.fb a {
+	background-image: url(../images/facebook.png);
+	background-color: #fff;
+}
+.b-footer_netlist-item.pi a {
+	background-image: url(../images/pinterest.png);
+	background-color: #fff;
+}
+.b-footer_netlist-item.ig a {
+	background-image: url(../images/instagram.png);
+	background-color: #fff;
+}
+.b-footer_netlist-item.gplus a {
+	background-image: url(../images/gplus.png);
+	background-color: #fff;
+}
+
+.b-footer_nav {
+	margin:89px 60px 205px;
+}
+.b-footer h3 {
+	color: #ffffff;
+	font-size: 28px;
+	font-weight: 300;
+	line-height: 50px;
+	margin: 0;
+	padding: 0;
+}
+.b-footer_nav-list {
+	color: #ffffff;
+	font: 400 15px/30px "Playfair Display", serif;
+	margin-top: 29px;
+}
+.b-footer_clients {
+	margin:89px 60px 205px;
+	vertical-align: top;
+}
+.b-footer_contacts {
+	margin: 89px 0 205px 60px;
+	vertical-align: top;
+}
+.b-footer_contacts_list-item:first-child {
+	padding-bottom: 16px;
+}
+.b-footer_contacts_list-item:last-child {
+	padding-top: 17px;
+	color: #e2574c;
+}
