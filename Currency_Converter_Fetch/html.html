@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Currency converter</title>
+</head>
+
+<body>
+    <div class="body-converter">
+        <div class="wrapper">
+            <h1>Currency Converter</h1>
+            <form id="form-convert" onsubmit="return false;">
+                <div class="currency-insert">
+                    <select name="currencies" id="choose-currency" size="1">
+                        <!-- Inserting options here-->
+                    </select>
+                    <input type="number" id="insert-sum" name="sum" />
+                </div>
+            </form>
+            <div class="result">
+                <div id="result-show"></div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
